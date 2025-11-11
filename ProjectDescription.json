@@ -1,9 +1,9 @@
 {
-  "ProjectName": "portas",
+  "ProjectName": "Logicsim",
   "DLSVersion_LastSaved": "2.1.6",
   "DLSVersion_EarliestCompatible": "2.0.0",
   "CreationTime": "2025-10-07T19:59:42.329-03:00",
-  "LastSaveTime": "2025-10-28T21:39:14.198-03:00",
+  "LastSaveTime": "2025-11-11T20:40:28.342-03:00",
   "Prefs_MainPinNamesDisplayMode": 0,
   "Prefs_ChipPinNamesDisplayMode": 2,
   "Prefs_GridDisplayMode": 0,
@@ -22,7 +22,9 @@
     "xnor",
     "soma e carry",
     "soma e carry 2 ",
-    "4 bit adder"
+    "4 bit adder",
+    "half subtractor",
+    "full-subtractor"
   ],
   "StarredList":[
     {
@@ -47,6 +49,14 @@
     },
     {
       "Name":"4 bit adder",
+      "IsCollection":false
+    },
+    {
+      "Name":"half subtractor",
+      "IsCollection":false
+    },
+    {
+      "Name":"full-subtractor",
       "IsCollection":false
     }
   ],
