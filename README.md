@@ -1,41 +1,57 @@
-4 Bit adder
-Entradas:
-Duas entradas de 4 bits (A e B) e uma entrada de Carry In (Cin), que é o vai-um inicial.
-Saídas:
-Uma saída de 4 bits (Soma) e um Carry Out (Cout), que indica se houve vai-um final.
-Explicação:
-O circuito soma dois números binários de 4 bits usando quatro somadores completos em série. Cada estágio soma um par de bits e o carry do anterior, gerando o resultado final da adição.
-Half subtractor
-## entradas
 
-A  o valor de onde vamos subtrair
 
-B   o valor que será subtraído
-## Saídas
+---
 
-Diff Resultado da subtração A - B
+## 4-bit Adder
 
-Borrow  Indica se precisou “pedir 1 emprestado” porque B era maior que A
- ## Explicação
+### **Entradas**
+- **A**: Número binário de 4 bits  
+- **B**: Número binário de 4 bits  
+- **Cin (Carry In)**: Vai-um inicial usado na primeira soma
 
-O half-subtractor é um circuito lógico que faz a subtração de um único bit.
-Ele calcula A – B, mas não considera nenhum empréstimo vindo de operações anteriores.
+### **Saídas**
+- **Soma**: Resultado da adição (4 bits)  
+- **Cout (Carry Out)**: Vai-um final caso a soma ultrapasse 4 bits
 
-Full subtractor
-## ENTRADAS
+### **Explicação**
+O 4-bit Adder é formado por **quatro somadores completos (full adders)** ligados em série.  
+Cada estágio soma:
+1. Um bit de A  
+2. Um bit de B  
+3. O carry vindo do estágio anterior  
 
-A  valor a ser subtraído
+O resultado final é um número de 4 bits mais um carry final indicando overflow.
 
-B  valor que subtrai
+---
 
-Bin   empréstimo vindo da subtração anterior
+##  Half-Subtractor
 
-## Saídas
+### **Entradas**
+- **A**: Valor de onde vamos subtrair  
+- **B**: Valor que será subtraído  
 
-Difference  Resultado da subtração
+### **Saídas**
+- **Diff (Difference)**: Resultado de `A - B`  
+- **Borrow**: Indica se foi necessário pedir empréstimo (quando B > A)
 
-Bout  Empréstimo que vai para o próximo bit
+### **Explicação**
+O Half-Subtractor realiza a subtração de **um único bit**.  
+Ele calcula `A – B`, mas **não considera nenhum empréstimo vindo de operações anteriores**, ou seja, funciona apenas isoladamente.
 
-## Explicação 
+---
 
-O full-subtractor faz a subtração de um bit considerando também o empréstimo anterior, então ele é o que realmente permite subtrair números maiores (vários bits).
+##  Full-Subtractor
+
+### **Entradas**
+- **A**: Valor a ser subtraído  
+- **B**: Valor que subtrai  
+- **Bin (Borrow In)**: Empréstimo vindo da subtração anterior  
+
+### **Saídas**
+- **Difference**: Resultado da subtração  
+- **Bout (Borrow Out)**: Empréstimo que vai para o próximo bit
+
+### **Explicação**
+O Full-Subtractor é utilizado para subtrair números de vários bits porque ele **considera o empréstimo anterior (Bin)**.  
+Ele calcula a subtração completa de um único bit, propagando o empréstimo para o próximo estágio quando necessário.
+
