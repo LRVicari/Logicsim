@@ -3,7 +3,7 @@
   "DLSVersion_LastSaved": "2.1.6",
   "DLSVersion_EarliestCompatible": "2.0.0",
   "CreationTime": "2025-10-07T19:59:42.329-03:00",
-  "LastSaveTime": "2025-11-11T20:40:28.342-03:00",
+  "LastSaveTime": "2025-11-18T21:44:41.773-03:00",
   "Prefs_MainPinNamesDisplayMode": 0,
   "Prefs_ChipPinNamesDisplayMode": 2,
   "Prefs_GridDisplayMode": 0,
@@ -24,7 +24,12 @@
     "soma e carry 2 ",
     "4 bit adder",
     "half subtractor",
-    "full-subtractor"
+    "full-subtractor",
+    "2B mux",
+    "3 and",
+    "3 or",
+    "4 or",
+    " mux"
   ],
   "StarredList":[
     {
@@ -57,6 +62,26 @@
     },
     {
       "Name":"full-subtractor",
+      "IsCollection":false
+    },
+    {
+      "Name":"2B mux",
+      "IsCollection":false
+    },
+    {
+      "Name":"3 and",
+      "IsCollection":false
+    },
+    {
+      "Name":"3 or",
+      "IsCollection":false
+    },
+    {
+      "Name":"4 or",
+      "IsCollection":false
+    },
+    {
+      "Name":" mux",
       "IsCollection":false
     }
   ],
